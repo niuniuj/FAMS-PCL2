@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAMS</title>
+  <style>
+    /* 初始化隐藏内容 */
+    .content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- 管理页面 -->
+  <div id="admin" class="content">
+    <div class="navbar">
+      <h2>FAMS自定义主页运行后台</h2> <!-- 标题用于显示状态变量的当前值 -->
+    </div>
+    <div>
+      <!-- 表单用于管理员选择下载文件 -->
+      <form id="fileSelectionForm" action="out_save.php" method="post" onsubmit="setOutParameter()">
+        <label for="fileSelection">选择要下载的文件：</label>
+        <select id="fileSelection" name="fileSelection">
+          <option value="normal">正常运行文件</option>
+          <option value="404">404 文件</option>
+        </select>
+        <button type="submit">保存选择</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // 检查用户是否已登录
+    document.addEventListener("DOMContentLoaded", function() {
+      if (localStorage.getItem('loggedIn') !== 'true') {
+        // 如果未登录，重定向到 login.html
+        alert("您还未登录!");
+        window.location.href = 'login.html';
+      } else {
+        // 用户已登录，显示管理页面内容
+        localStorage.setItem('loggedIn', 'login');
+        document.getElementById('admin').style.display = 'block';
+      }
+    });
+
+    // 设置表单的out参数
+    function setOutParameter() {
+      var fileSelection = document.getElementById('fileSelection').value;
+      var outParameter;
+
+      // 根据选择的选项设置out参数值
+      switch(fileSelection) {
+        case 'normal':
+          outParameter = 'normal';
+          break;
+        case '404':
+          outParameter = '404';
+          break;
+        default:
+          // 默认值
+          outParameter = '404';
+      }
+
+      // 将out参数添加到表单中
+      var outInput = document.createElement('input');
+      outInput.setAttribute('type', 'hidden');
+      outInput.setAttribute('name', 'out');
+      outInput.setAttribute('value', outParameter);
+      document.getElementById('fileSelectionForm').appendChild(outInput);
+
+      return true; // 继续提交表单
+    }
+  </script>
+</body>
+</html>

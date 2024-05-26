@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--定义语言-->
+<html lang="zh-CN">
+
+<head>
+    <!--定义格式-->
+    <meta charset="UTF-8">
+    <!--页面抬头-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMS身份认证</title>
+    <style>
+        /* 隐藏标签 */
+        label {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>FAMS后台管理系统</h2>
+    <form action="/login.php" method="post">
+        <label for="username">账号：</label>
+        <input type="text" id="username" name="username" placeholder="账号" required><br><br>
+        
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" placeholder="密码" required><br><br>
+        
+        <input type="submit" value="登录">
+    </form>
+</body>
+
+</html>
