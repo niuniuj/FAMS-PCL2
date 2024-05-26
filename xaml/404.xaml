@@ -1,0 +1,10 @@
+<!--此文件为FAMS自定义主页404页面，所有版权与使用解释权归FAMS所有
+©FAMS-2024-->
+    
+<local:MyCard Title="awa">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,4" TextWrapping="Wrap" Text="对不起，主页被下架或出错了，请耐心等待" />
+        <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="用于联网更新主页时刷新信息" />
+    </StackPanel>
+</local:MyCard>
