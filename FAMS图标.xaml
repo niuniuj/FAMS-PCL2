@@ -5,7 +5,7 @@
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Width="320" HorizontalAlignment="Left" FontWeight="Bold"
                     Text="1080p版本" />
-		<Image Height="50" HorizontalAlignment="Center" Source="http://play.fams-server.top:2233/FAMSicon1080p.png" />
+		<Image Height="50" HorizontalAlignment="Center" Source="http://play.fams-server.top:2233/icon/FAMSicon1080p.png" />
 		<local:MyButton Margin="0,5,0,6" Width="250" Height="35"
                     Text="下载ICON" EventType="下载文件" EventData="https://pan.fams-server.top:5212/f/ABub/FAMSicon1080p.png" />
 	</StackPanel>
@@ -13,7 +13,7 @@
 	<StackPanel Margin="25,200,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Width="320" HorizontalAlignment="Left" FontWeight="Bold"
                     Text="MC方块版" />
-		<Image Height="50" HorizontalAlignment="Center" Source="http://play.fams-server.top:2233/FAMSiconMC.png" />
+		<Image Height="50" HorizontalAlignment="Center" Source="http://play.fams-server.top:2233/icon/FAMSiconMC.png" />
 		<local:MyButton Margin="0,5,0,6" Width="250" Height="35"
                     Text="下载ICON" EventType="下载文件" EventData="https://pan.fams-server.top:5212/f/xEIw/FAMSiconMC.png" />
 	</StackPanel>
@@ -24,7 +24,7 @@
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Width="320" HorizontalAlignment="Left" FontWeight="Bold"
                     Text="1周年版" />
-		<Image Height="50" HorizontalAlignment="Center" Source="http://play.fams-server.top:2233/FAMSicon1st.png" />
+		<Image Height="50" HorizontalAlignment="Center" Source="http://play.fams-server.top:2233/icon/FAMSicon1st.png" />
 		<local:MyButton Margin="0,5,0,6" Width="250" Height="35"
                     Text="下载ICON" EventType="下载文件" EventData="https://pan.fams-server.top:5212/f/vPCn/FAMSicon1st.png" />
 	</StackPanel>
