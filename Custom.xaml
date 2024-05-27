@@ -4,9 +4,9 @@
 <!--标题页-->
 <local:MyCard Title="------《丨欢迎来到FAMS丨》------   " CanSwap="False" HorizontalAlignment="Center" Margin="0,0,0,0">
     <StackPanel Margin="25,40,23,15">
-        <Image Height="200" HorizontalAlignment="Center" IsHitTestVisible="False" Source="http://play.fams-server.top:2233/FAMS.png" ToolTip="点击下载FAMS所有版本图标" />
+        <Image Height="200" HorizontalAlignment="Center" IsHitTestVisible="False" Source="http://play.fams-server.top:2233/icon/FAMS.png" ToolTip="点击下载FAMS所有版本图标" />
 		<local:MyIconTextButton Margin="0,8,0,0" Height="35" HorizontalAlignment="Center"
-            Text="查看更多图标" EventType="打开帮助" EventData="http://play.fams-server.top:2233/FAMSicon.json"
+            Text="查看更多图标" EventType="打开帮助" EventData="http://play.fams-server.top:2233/icon/FAMSicon.json"
             LogoScale="1.02" Logo="M256 512m-74.666667 0a74.666667 74.666667 0 1 0 149.333334 0 74.666667 74.666667 0 1 0-149.333334 0Z M512 512m-74.666667 0a74.666667 74.666667 0 1 0 149.333334 0 74.666667 74.666667 0 1 0-149.333334 0Z M768 512m-74.666667 0a74.666667 74.666667 0 1 0 149.333334 0 74.666667 74.666667 0 1 0-149.333334 0Z" />
 	</StackPanel>
 </local:MyCard>
