@@ -5,13 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>图片验证码</title>
+  <title>你是立足吗？</title>
 </head>
-
+<!--正文-->
+<style>
+  #title {
+    text-indent: 570px;
+    margin-top: 200px;
+  }
+</style>
 <body>
-  <canvas id="canvas" width="120" height="40"><br><br></canvas>
-  <input type="text" id="text">
-  <input type="button" value="提交" id="bt">
+  <h1 id="title">操作之前，我们需要先检查你是不是人<h1>
+</body>
+<!--验证码-->
+<style>
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #canvas {
+    margin-bottom: 10px;
+  }
+  #controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #text {
+    margin-bottom: 10px;  
+  }
+</style>
+<body>
+  <div id="container">
+    <canvas id="canvas" width="120" height="40"></canvas><!--验证码大小修改-->
+    <div id="controls">
+      <input type="text" id="text">
+      <input type="button" value="提交" id="bt">
+    </div>
+  </div>
+  
   <script>
     var canvas = document.getElementById("canvas");//演员
     var context = canvas.getContext("2d");//舞台，getContext() 方法可返回一个对象，该对象提供了用于在画布上绘图的方法和属性。
@@ -82,7 +116,6 @@
       }
 
     }
-
   </script>
 </body>
 
