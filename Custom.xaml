@@ -42,7 +42,7 @@
 	<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
 		<Image Width="30" Height="30" Margin="0,20,0,15" Source="pack://application:,,,/images/Blocks/RedstoneLampOn.png"/>
         <local:MyButton Margin="0,8,0,0" Width="150" Height="35" ColorType="Highlight"
-        	Text="机械动力通道" EventType="启动游戏" EventData="FAMS服务器客户端|play.fams-server.top:26670" ToolTip="请确保启动器有命名为《FAMS-1.20.1-机械动力客户端》的FAMS服务器专项提供的整合包客户端" />
+        	Text="机械动力通道" EventType="启动游戏" EventData="FAMS-1.20.1-机械动力客户端|play.fams-server.top:26670" ToolTip="请确保启动器有命名为《FAMS-1.20.1-机械动力客户端》的FAMS服务器专项提供的整合包客户端" />
 		<local:MyButton Margin="0,8,0,0" Width="150" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
         	Text="复制地址" EventType="复制文本" EventData="play.fams-server.top" ToolTip="复制主服地址" />
     </StackPanel>
